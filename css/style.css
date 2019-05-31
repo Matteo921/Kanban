@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.board {
+    width: 100%;
+    height: 100vh;
+    background: #dff9fb;
+    color: #130f40;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+}
+
+.create-column,
+.add-card {
+    width: 150px;
+    height: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 15px;
+    border: none;
+    background-color: #e55039;
+    color: #f6b93b;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.create-column:hover,
+.add-card:hover {
+    background-color: #f6b93b;
+    color: #e55039;
+    border-radius: 5px;
+}
+
+.column {
+    width: 30%;
+    background-color: #82ccdd;
+    float: left;
+}
+
+.column ul {
+    list-style-type: none;
+    align-self: center;
+}
+
+.card {
+    background: #e55039;
+    border-radius: 15px;
+    color: #f6b93b;
+}
