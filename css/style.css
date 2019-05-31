@@ -80,6 +80,10 @@ body {
     right: 20px;
 }
 
+.card-description {
+    margin: 5px auto;
+}
+
 .btn-delete {
     position: absolute;
     top: 5px;
