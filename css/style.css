@@ -15,12 +15,11 @@ body {
     text-align: center;
 }
 
-.create-column,
-.add-card {
+.create-column {
     width: 150px;
-    height: 60px;
+    height: 50px;
     font-family: 'Ubuntu', sans-serif;
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
     background-color: #e55039;
     color: #f6b93b;
@@ -29,17 +28,37 @@ body {
     transition: 300ms;
 }
 
+.add-card {
+    width: 100px;
+    height: 30px;
+    margin: 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 5px;
+    border: none;
+    background-color: #130f40;
+    color: #f6b93b;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
 .create-column:hover,
 .add-card:hover {
     background-color: #f6b93b;
     color: #e55039;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .column {
-    width: 30%;
-    background-color: #82ccdd;
+    width: 32%;
+    background-color: #ff6b6b;
+    border-radius: 15px;
     float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    position: relative;
 }
 
 .column ul {
@@ -47,8 +66,26 @@ body {
     align-self: center;
 }
 
+.column li {
+    margin: 0 auto;
+}
+
 .card {
-    background: #e55039;
+    background: #ecf0f1;
     border-radius: 15px;
-    color: #f6b93b;
+    color: #2c3e50;
+    padding: 10px;
+    position: relative;
+    margin: 5px auto;
+    right: 20px;
+}
+
+.btn-delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: inherit;
+    font-size: 15px;
+    color: #2c3e50;
+    border: none;
 }
