@@ -97,5 +97,7 @@ body {
 @media (max-width: 760px) {
     .column {
         width: 90%;
+        display: block;
+        margin: 10px auto;
     }
 }
