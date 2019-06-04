@@ -1,4 +1,5 @@
 //zmienne API
+var prefix = "https://cors-anywhere.herokuapp.com/";
 var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
 var myHeaders = {
     'X-Client-Id': 'X-Client-Id',
@@ -18,7 +19,7 @@ function generateTemplate(name, data, basicElement) {
     return element;
 }
 
-fetch(baseUrl + '/board', { headers: myHeaders })
+fetch(prefix + baseUrl + '/board', { headers: myHeaders })
     .then(function(resp) {
         return resp.json();
     })
