@@ -81,11 +81,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function initSortable(id) {
         var el = document.getElementById(id);
-        var sortable = Sortable.create(el, {
+        var Sortable = Sortable.create(el, {
             group: 'kanban',
             sort: true
         });
-    }
+    };
+
 
     document.querySelector('#board .create-column').addEventListener('click', function() {
         var name = prompt('Enter a column name');
