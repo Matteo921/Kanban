@@ -64,6 +64,7 @@ body {
 .column ul {
     list-style-type: none;
     align-self: center;
+    min-height: 100px
 }
 
 .column li {
